@@ -1,15 +1,11 @@
-@import "abstracts/functions";
-@import "abstracts/mixins";
-@import "abstracts/variables";
-
-@import "base/animations";
-@import "base/base";
-@import "base/typography";
-@import "base/utilities";
-
-@import "components/button";
-@import "pages/home";
-@import "layout/header"
+body {
+    font-family: "Lato" , sans-serif;
+    font-weight: 400;
+    /*font-size: 16px;*/
+    line-height: 1.7;
+    color: $color-gray-dark;
+    padding: 3rem;
+}
 
 .heading-primary {
     color: $color-white;
@@ -40,4 +36,3 @@
     
 
 }
-
