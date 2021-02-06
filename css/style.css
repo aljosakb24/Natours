@@ -82,6 +82,44 @@ body {
     animation-duration: 1s;
     animation-timing-function: ease-out; }
 
+/* line 39, sass/base/_typography.scss */
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #7ed56f, #777777);
+  display: inline-block;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: all .2s;
+  letter-spacing: 2px; }
+  /* line 51, sass/base/_typography.scss */
+  .heading-secondary:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+/* line 56, sass/base/_typography.scss */
+.heading-tertiary {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+/* line 62, sass/base/_typography.scss */
+.paragraph {
+  font-size: 1.6rem; }
+  /* line 65, sass/base/_typography.scss */
+  .paragraph:not(:last-child) {
+    margin-bottom: 3px; }
+
+/* line 1, sass/base/_utilities.scss */
+.u-center-text {
+  text-align: center; }
+
+/* line 4, sass/base/_utilities.scss */
+.u-margn-bottom-8 {
+  margin-bottom: 8rem; }
+
 /* line 2, sass/components/_button.scss */
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -133,6 +171,12 @@ body {
   animation: moveInBottom .5s ease-out .75s;
   animation-fill-mode: backwards; }
 
+/* line 1, sass/pages/_home.scss */
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh; }
+
 /* line 1, sass/layout/_header.scss */
 .header {
   height: 95vh;
@@ -160,9 +204,8 @@ body {
 /* line 1, sass/layout/_grid.scss */
 .row {
   max-width: 114rem;
-  background-color: #eeeeee;
   margin: 0 auto; }
-  /* line 8, sass/layout/_grid.scss */
+  /* line 7, sass/layout/_grid.scss */
   .row:not(:last-child) {
     margin-bottom: 8rem; }
   /* line 2, sass/abstracts/_mixins.scss */
@@ -170,28 +213,27 @@ body {
     content: "";
     display: table;
     clear: both; }
-  /* line 14, sass/layout/_grid.scss */
+  /* line 13, sass/layout/_grid.scss */
   .row [class^="col-"] {
-    background-color: orangered;
     float: left; }
-    /* line 18, sass/layout/_grid.scss */
+    /* line 17, sass/layout/_grid.scss */
     .row [class^="col-"]:not(:last-child) {
       margin-right: 2rem; }
-  /* line 24, sass/layout/_grid.scss */
+  /* line 23, sass/layout/_grid.scss */
   .row .col-1-of-2 {
     width: calc((100% - 2rem) /2); }
-  /* line 28, sass/layout/_grid.scss */
+  /* line 27, sass/layout/_grid.scss */
   .row .col-1-of-3 {
     width: calc((100% - 2 * 2rem) / 3); }
-  /* line 31, sass/layout/_grid.scss */
+  /* line 30, sass/layout/_grid.scss */
   .row .col-1-of-4 {
     width: calc((100% - 3 * 2rem) / 4); }
-  /* line 34, sass/layout/_grid.scss */
+  /* line 33, sass/layout/_grid.scss */
   .row .col-2-of-3 {
     width: calc(2 * ((100% - 2 * 2rem) / 3) + 2rem); }
-  /* line 37, sass/layout/_grid.scss */
+  /* line 36, sass/layout/_grid.scss */
   .row .col-2-of-4 {
     width: calc( 2 * ((100% - 3 * 2rem) / 4) + 2rem); }
-  /* line 40, sass/layout/_grid.scss */
+  /* line 39, sass/layout/_grid.scss */
   .row .col-3-of-4 {
     width: calc( 3 * ((100% - 3 * 2rem) / 4) + 2 * 2rem); }
