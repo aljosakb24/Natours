@@ -93,31 +93,40 @@ body {
   background-clip: text;
   color: transparent;
   transition: all .2s;
-  letter-spacing: 2px; }
-  /* line 51, sass/base/_typography.scss */
+  letter-spacing: 2px;
+  margin-bottom: 8rem; }
+  /* line 52, sass/base/_typography.scss */
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
-/* line 56, sass/base/_typography.scss */
+/* line 57, sass/base/_typography.scss */
 .heading-tertiary {
   font-size: 1.6rem;
   text-transform: uppercase;
   font-weight: 700; }
 
-/* line 62, sass/base/_typography.scss */
-.paragraph {
+/* line 64, sass/base/_typography.scss */
+.paragraf {
   font-size: 1.6rem; }
-  /* line 65, sass/base/_typography.scss */
-  .paragraph:not(:last-child) {
-    margin-bottom: 3px; }
+  /* line 67, sass/base/_typography.scss */
+  .paragraf:not(:last-child) {
+    margin-bottom: 3rem; }
 
 /* line 1, sass/base/_utilities.scss */
 .u-center-text {
   text-align: center; }
 
-/* line 4, sass/base/_utilities.scss */
-.u-margn-bottom-8 {
+/* line 5, sass/base/_utilities.scss */
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
+/* line 9, sass/base/_utilities.scss */
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+/* line 13, sass/base/_utilities.scss */
+.u-margin-bottom-big {
   margin-bottom: 8rem; }
 
 /* line 2, sass/components/_button.scss */
@@ -170,6 +179,28 @@ body {
 .btn--animated {
   animation: moveInBottom .5s ease-out .75s;
   animation-fill-mode: backwards; }
+
+/* line 57, sass/components/_button.scss */
+.btn-text:link, .btn-text:visited {
+  color: #55c57a;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #55c57a;
+  padding: 3px;
+  font-size: 1.6rem;
+  transition: all .2s; }
+
+/* line 69, sass/components/_button.scss */
+.btn-text:hover {
+  background-color: #55c57a;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); }
+
+/* line 77, sass/components/_button.scss */
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0); }
 
 /* line 1, sass/pages/_home.scss */
 .section-about {
