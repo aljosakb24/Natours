@@ -202,6 +202,40 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
 
+/* line 1, sass/components/_composition.scss */
+.composition {
+  position: relative; }
+  /* line 4, sass/components/_composition.scss */
+  .composition__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 2rem; }
+    /* line 14, sass/components/_composition.scss */
+    .composition__photo--p1 {
+      left: 0;
+      top: -2rem; }
+    /* line 18, sass/components/_composition.scss */
+    .composition__photo--p2 {
+      right: 0;
+      top: 2rem; }
+    /* line 22, sass/components/_composition.scss */
+    .composition__photo--p3 {
+      left: 20%;
+      top: 10rem; }
+    /* line 27, sass/components/_composition.scss */
+    .composition__photo:hover {
+      outline: 1.5rem solid #55c57a;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 20; }
+  /* line 36, sass/components/_composition.scss */
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.9); }
+
 /* line 1, sass/pages/_home.scss */
 .section-about {
   background-color: #f7f7f7;
