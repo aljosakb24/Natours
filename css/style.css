@@ -87,7 +87,7 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
-  background-image: linear-gradient(to right, #7ed56f, #777777);
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
   display: inline-block;
   -webkit-background-clip: text;
   background-clip: text;
@@ -236,11 +236,43 @@ body {
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.9); }
 
+/* line 1, sass/components/_feature-box.scss */
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform .3s; }
+  /* line 11, sass/components/_feature-box.scss */
+  .feature-box__icon {
+    font-size: 6rem;
+    margin-bottom: .5rem;
+    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text; }
+  /* line 19, sass/components/_feature-box.scss */
+  .feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
+
 /* line 1, sass/pages/_home.scss */
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh; }
+
+/* line 6, sass/pages/_home.scss */
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg);
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -11.5rem; }
+  /* line 13, sass/pages/_home.scss */
+  .section-features > * {
+    transform: skewY(7deg); }
 
 /* line 1, sass/layout/_header.scss */
 .header {
@@ -283,22 +315,22 @@ body {
     float: left; }
     /* line 17, sass/layout/_grid.scss */
     .row [class^="col-"]:not(:last-child) {
-      margin-right: 2rem; }
+      margin-right: 6rem; }
   /* line 23, sass/layout/_grid.scss */
   .row .col-1-of-2 {
-    width: calc((100% - 2rem) /2); }
+    width: calc((100% - 6rem) /2); }
   /* line 27, sass/layout/_grid.scss */
   .row .col-1-of-3 {
-    width: calc((100% - 2 * 2rem) / 3); }
+    width: calc((100% - 2 * 6rem) / 3); }
   /* line 30, sass/layout/_grid.scss */
   .row .col-1-of-4 {
-    width: calc((100% - 3 * 2rem) / 4); }
+    width: calc((100% - 3 * 6rem) / 4); }
   /* line 33, sass/layout/_grid.scss */
   .row .col-2-of-3 {
-    width: calc(2 * ((100% - 2 * 2rem) / 3) + 2rem); }
+    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
   /* line 36, sass/layout/_grid.scss */
   .row .col-2-of-4 {
-    width: calc( 2 * ((100% - 3 * 2rem) / 4) + 2rem); }
+    width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
   /* line 39, sass/layout/_grid.scss */
   .row .col-3-of-4 {
-    width: calc( 3 * ((100% - 3 * 2rem) / 4) + 2 * 2rem); }
+    width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
