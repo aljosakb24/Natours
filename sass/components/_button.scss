@@ -19,6 +19,19 @@
             
         }
     }
+<<<<<<< HEAD
+=======
+
+    &--green{
+        background-color: $color-primary;
+        color: $color-white;
+        &::after{
+            background-color: $color-primary;
+            
+        }
+    }
+
+>>>>>>> 4835432 (finished flip cards)
     &:hover{
         transform: translateY(-3px);
         box-shadow: 0 1rem 2rem rgba($color-black,0.1);
